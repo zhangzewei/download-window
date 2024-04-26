@@ -2,6 +2,7 @@ import { Button, Image } from "@nextui-org/react";
 import { useState } from "react";
 import Loading from './components/Loading'
 import Modal from './components/Modal'
+import AppImage from './assets/images/app.jpeg'
 function App() {
 	const [start, setStart] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ function App() {
 				width={500}
 				height={500}
 				className="object-contain"
-				src="src/assets/images/app.jpeg"
+				src={AppImage}
 			/>
 			{start && <Loading onFinished={onFinished} />}
 			<Button

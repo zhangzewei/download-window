@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, Image, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Link } from "@nextui-org/react";
+import WeChatImg from '../../assets/images/pay.jpeg'
 
 export default function MyModal({
     isOpen,
@@ -14,7 +15,7 @@ export default function MyModal({
                         width={500}
                         height={500}
                         className="object-contain"
-                        src="src/assets/images/pay.jpeg"
+                        src={WeChatImg}
                     />
                     <Link target="_blank" href="https://affim.baidu.com/unique_44581136/chat?siteId=20446631&userId=44581136&siteToken=80471226551efc5c8a1daa7ae2baa00b">如有疑问，请联系客服</Link>
                 </ModalBody>
