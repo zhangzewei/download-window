@@ -1,8 +1,8 @@
-import './assets/main.css'
-
 import ReactDOM from 'react-dom/client'
 import { NextUIProvider } from "@nextui-org/react";
 import App from './App'
+import './assets/main.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<NextUIProvider>

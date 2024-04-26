@@ -6,7 +6,7 @@ export default function MyModal({
     onClose
 }) {
     return (
-        <Modal isOpen={isOpen}>
+        <Modal isOpen={isOpen} hideCloseButton>
             <ModalContent>
                 <ModalHeader className="flex flex-col gap-1 text-black">扫码即可立即获取</ModalHeader>
                 <ModalBody className="text-black flex items-center">

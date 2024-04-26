@@ -1,4 +1,4 @@
-import { Button, Image, useDisclosure } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 import { useState } from "react";
 import Loading from './components/Loading'
 import Modal from './components/Modal'
@@ -7,7 +7,7 @@ function App() {
 	const [isOpen, setIsOpen] = useState(false);
 	const onFinished = () => { setIsOpen(true) }
 	return (
-		<div className="font-bold flex justify-center flex-col items-center h-screen space-y-8">
+		<div className="container m-auto font-bold flex justify-center flex-col items-center h-screen space-y-8">
 			<Image
 				width={500}
 				height={500}
